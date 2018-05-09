@@ -1,0 +1,13 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    watchr (0.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  watchr!
+
+BUNDLED WITH
+   1.16.0
