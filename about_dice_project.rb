@@ -1,16 +1,17 @@
 require File.expand_path(File.dirname(__FILE__) + '/neo')
 
 class DiceSet
-  
-  @dice = DiceSet.new
-  def initialize
-    @dice = Array.new
+  # get and set values
+  attr_reader :values
+  # pass number of rolls
+  def roll(num)
+    # set instance of values to empty array
+    @values = []
+    # for each roll shovel a random value bewteen 1 and 6 into array
+    (1..num).each { |count| @values << rand(1..6) }
   end
-  
-  def roll(dice)
-    @dice.sample
-  end
-
+  # get random value
+  @values
 end
 
 
